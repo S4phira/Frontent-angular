@@ -1,0 +1,14 @@
+<div class="close-button"></div>
+<h2 *ngIf = "itemType == 'chest'" >{{itemName | uppercase}} </h2>
+<img  *ngIf = "itemType == 'chest'" class ="image-chest" src = "{{itemSrc}}">
+<img  *ngIf = "itemType == 'prize'" class ="image-prize" src = "{{itemSrc}}">
+<ng-container *ngIf = "itemType == 'chest'">
+    <button class="button-style-chest" (click) = "onClickChest(itemId)" >OTWÓRZ SKRZYNKĘ</button>
+</ng-container>
+<ng-container *ngIf = "itemType == 'prize'">
+    <div class="info-prize">
+        <p>KLUCZ</p>
+        <button class="button-style-prizes">{{itemKey}}</button>
+    </div>
+   
+</ng-container>

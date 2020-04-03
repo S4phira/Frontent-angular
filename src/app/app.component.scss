@@ -1,0 +1,23 @@
+$color-item-container: #222c31;
+$color-eq-container:#1a2326;
+$color-text: #00ecb3;
+
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.main-container{
+    margin: 0 20% 0 20%;
+}
+.item-view-container{
+    background-color: $color-item-container;
+    float: left;
+    width: 60%;
+    height:700px;
+}
+.eq-view-container{
+    background-color: $color-eq-container;
+    float: right;
+    width: 40%;
+    height:700px;
+}

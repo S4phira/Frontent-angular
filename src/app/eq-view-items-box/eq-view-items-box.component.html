@@ -1,0 +1,33 @@
+<h2> SKRZYNIE </h2>
+<div class="item-gridbox">
+    <ng-container *ngFor = "let item of ChestList" >
+        <div (click)="onClick(item)" class="item-box">
+            
+            <img [src] = 'item.srcImage'>
+        </div>
+    </ng-container >
+        <ng-container *ngIf = "ChestList.length <= 2 ">
+            <div class="empty-box"></div>
+        </ng-container>  
+        <ng-container *ngIf = "ChestList.length <= 1 ">
+            <div class="empty-box"></div>
+        </ng-container>
+        <ng-container *ngIf = "ChestList.length <= 0 ">
+            <div class="empty-box"></div>
+        </ng-container>
+    <div class="add-box"> <img src = 'assets/plus-icon.png'></div>
+</div>
+
+<h2> NAGRODY </h2>
+<h4>WARTOŚĆ = $<span> {{getTotalAmount()}} </span></h4>
+<div class="item-gridbox">
+    <ng-container *ngFor = "let item of PrizeList">
+        <div (click)="onClick(item)" class="item-box">
+            <img [src] = 'item.srcImage'>
+        </div>
+    </ng-container>
+        <ng-container *ngIf = "PrizeList.length <= 2 ">
+            <div class="empty-box"></div>
+        </ng-container>
+    <div class="add-box"> <img src = 'assets/plus-icon.png'></div>
+</div>

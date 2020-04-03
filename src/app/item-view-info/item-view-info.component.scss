@@ -1,0 +1,67 @@
+$color-button-chest: #00ecb3;
+$color-button-prizes: #39484e;
+
+h2{
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 0;
+}
+img{
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+.info-prize p{
+  color: #00ecb3;
+  text-align: center;
+}
+.button-style-chest{
+  background-color: $color-button-chest;
+  color: #1a2326;
+}
+.button-style-prizes{
+  background-color: $color-button-prizes;
+  font-weight: 400;
+  color: white;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+}
+.image-prize{
+  padding-top: 30px;
+}
+.close-button {
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+.close-button:before,.close-button:after{
+  content:'';
+  position:absolute;
+  width: 25px;
+  height: 4px;
+  background-color:white;
+  border-radius:2px;
+  top: 40px;
+}
+.close-button:before{
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  transform:rotate(45deg);
+  left: 32.5px;
+}
+.close-button:after{
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  left: 32.5px;
+}
